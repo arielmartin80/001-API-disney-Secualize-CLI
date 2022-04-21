@@ -1,0 +1,40 @@
+### GET ALL
+GET http://localhost:3000/api/characters
+
+
+### GET ONE
+GET http://localhost:3000/api/characters/1
+
+
+### CREATE
+POST http://localhost:3000/api/characters
+Content-Type: application/json
+
+ {
+    "name":"Thor",
+    "image":"https://media.wired.com/photos/5932bdcd95879f6d0c009d66/master/pass/thor-hemsworth.jpg",
+    "age":"1500",
+    "weight":"98",
+    "history":"Thor era el dios de la guerra y la lucha salvaje. Era el hijo de Odin, y el más fuerte de todos los dioses . Siempre llevaba su martillo Mjølner que tenía la maravillosa capacidad de siempre dar en el blanco para después regresar a su dueño."
+ }
+
+### UPDATE
+
+PUT http://localhost:3000/api/characters/1
+Content-Type: application/json
+
+ {
+    "name":"Thor",
+    "image":"https://media.wired.com/photos/5932bdcd95879f6d0c009d66/master/pass/thor-hemsworth.jpg",
+    "age":"1500",
+    "weight":"98",
+    "history":"Thor es el dios del trueno. Es hijo de Odin, y el más fuerte de todos los dioses . Siempre lleva su martillo Mjølner que tiene la maravillosa capacidad de siempre dar en el blanco para después regresar a su dueño."
+ }
+
+
+### DELETE
+DELETE http://localhost:3000/api/characters/5
+
+
+### GET by NAME
+GET http://localhost:3000/api/characters?movies=3

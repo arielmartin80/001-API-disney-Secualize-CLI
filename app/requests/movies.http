@@ -1,0 +1,48 @@
+### CREATE MOVIE
+POST http://localhost:3000/api/movies
+Content-Type: application/json
+
+{
+    "title":"thor",
+    "image":"",
+    "create_date":"2010-04-28",
+    "qualification":4,
+    "genre_id": 1
+}
+
+
+### UPDATE MOVIE
+PUT http://localhost:3000/api/movies/1
+Content-Type: application/json
+
+{
+    "title":"The Avengers",
+    "image":"https://images-na.ssl-images-amazon.com/images/S/pv-target-images/07f01ebf958b97063321b094836cfa79688f9e53eb9c25359e1e5826194f9440._RI_V_TTW_.jpg",
+    "createDate":"2012-05-04",
+    "qualification":"5",
+    "genre_id": 1
+}
+
+
+### DELETE
+DELETE http://localhost:3000/api/movies/5
+
+
+### GET All Movies
+GET http://localhost:3000/api/movies
+
+
+### GET One Movie
+GET http://localhost:3000/api/movies/1
+
+
+### GET BY TITLE
+GET  http://localhost:3000/api/movies?title=toy story
+
+
+### GET BY GenRE
+GET  http://localhost:3000/api/movies?idGenre=1
+
+
+### GET IN ORDER:  DESC | ASC
+GET  http://localhost:3000/api/movies?order=DESC
